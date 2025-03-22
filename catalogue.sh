@@ -55,7 +55,7 @@ npm install  &>> $LOGFILE    #installing dependencies
 VALIDATE $? "Installing dependencies"
 
 # use absoluteexact path where catalogue.service file is, because catalogue.service exists there
-cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /c/Users/waseem/REPOS/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
 VALIDATE $? "Copying catalogue service file"
 systemctl daemon-reload &>> $LOGFILE
 VALIDATE $? "catalogue daemon reload"
@@ -63,7 +63,7 @@ systemctl enable catalogue &>> $LOGFILE
 VALIDATE $? "Enable catalogue"
 systemctl start catalogue &>> $LOGFILE
 VALIDATE $? "Starting catalogue"
-cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /c/Users/waseem/REPOS/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 VALIDATE $? "copying mongodb repo"
 dnf install mongodb-org-shell -y &>> $LOGFILE
 VALIDATE $? "Installing MongoDB client"

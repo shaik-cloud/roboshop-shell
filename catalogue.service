@@ -4,7 +4,7 @@ Description = Catalogue Service
 [Service]
 User=roboshop
 Environment=MONGO=true
-Environment=MONGO_URL="mongodb://<new Record name from Rout53>:27017/catalogue"  #go to rout53 select the hosted zone which you created, open it,create new record,give your server private ip,save,now copy and paste newly got Record name here
+Environment=MONGO_URL="mongodb://joindevopsdaws76s.space:27017/catalogue"  #go to rout53 select the hosted zone which you created, open it,create new record,give your server private ip,save,now copy and paste newly got Record name here
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=catalogue
 
