@@ -58,7 +58,7 @@ VALIDATE $? "unzipping user"
 npm install &>> $LOGFILE
 VALIDATE $? "Installing dependencies"
 
-cp /c/Users/waseem/REPOS/roboshop-shell/user.service /etc/systemd/system/user.service
+cp /home/centos/roboshop-shell/user.service /etc/systemd/system/user.service
 VALIDATE $? "Copying user service file"
 
 systemctl daemon-reload &>> $LOGFILE
