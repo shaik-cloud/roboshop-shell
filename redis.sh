@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-exec &>$LOGFILE          #Automatically stores the logs of echo,given Commands in $LOGFILE. No need to mention $LOGFILE to store logs every time 
+exec &>$LOGFILE 
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
