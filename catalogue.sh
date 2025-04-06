@@ -70,7 +70,7 @@ npm install  &>> $LOGFILE
 VALIDATE $? "Installing dependencies"
 
 # use absolute, because catalogue.service exists there
-cp /c/Users/waseem/REPOS/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
+cp /root/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service &>> $LOGFILE
 
 VALIDATE $? "Copying catalogue service file"
 
